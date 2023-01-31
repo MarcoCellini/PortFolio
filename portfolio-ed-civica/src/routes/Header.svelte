@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/progetto-logo.svg';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+		<a href="/">
+			<img src={logo} alt="Logo-portfolio" />
 		</a>
 	</div>
 
@@ -19,11 +19,20 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/ed-civica' ? 'page' : undefined}>
+				<a href="/ed-civica">Educazione Civica</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname.startsWith('/2020-2021') ? 'page' : undefined}>
+				<a href="/2020-2021">2020-2021</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/2021-2022') ? 'page' : undefined}>
+				<a href="/2021-2022">2021-2022</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/2022-2023') ? 'page' : undefined}>
+				<a href="/2022-2023">2022-2023</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/2023-2024') ? 'page' : undefined}>
+				<a href="/2023-2024">2023-2024</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,7 +41,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -58,15 +67,15 @@
 	}
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		width: 3em;
+		height: 3em;
 		object-fit: contain;
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		--background: #0925B3;
 	}
 
 	svg {
@@ -98,7 +107,7 @@
 	}
 
 	li[aria-current='page']::before {
-		--size: 6px;
+		--size: 10px;
 		content: '';
 		width: 0;
 		height: 0;
@@ -113,10 +122,10 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
+		padding: 0 0.7rem;
+		color: var(--color-text-2);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
