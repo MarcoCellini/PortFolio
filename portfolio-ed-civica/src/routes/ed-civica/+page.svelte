@@ -1,26 +1,71 @@
+<script>
+	import punti from '$lib/images/punti.png';
+</script>
+
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>Ed-Civica</title>
+	<meta name="description" content="Spiegazione della materia" />
 </svelte:head>
 
-<div class="text-column">
-	<h1>About this app</h1>
+<body>
+	<h1><b>EDUCAZIONE CIVICA</b></h1>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+	<table>
+		<tbody>
+			<tr>
+				<td colspan="3" class="title">
+					<h2><b>CHE COS'E' L'EDUCAZIONE CIVICA</b></h2>
+				</td>
+			</tr>
 
-	<pre>npm create svelte@latest</pre>
+			<tr>
+				<td>&nbsp;</td>
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
+				<td>
+					<p class="descrizione">
+						Da settembre 2020 l'Educazione Civica è una disciplina trasversale che interessa tutti i
+						gradi scolastici, a partire dalla scuola dell’Infanzia fino alla scuola secondaria di II
+						grado.
+						<br />L'insegnamento ruota intorno a tre nuclei tematici principali:
+					</p>
+				</td>
 
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
-</div>
+				<td>
+					<img src={punti} alt="foto-scuola" class="foto-scuola" />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3">
+					<p class="descrizione">
+						Oltre a questi argomenti principali abbiamo trattato anche argomenti più vicini a noi
+						come l'epidemia di Cocid-19 nel 2020, gli sbarchi di migranti e le loro storie tramite
+						libri e testimonianze, come sono strutturati politicamente e legislativamente altri
+						stati come la Gran Bretagna, ecc...
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+<style>
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	.title {
+		text-align: left;
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+	.descrizione {
+		padding: 1%;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 1.3em;
+	}
+</style>

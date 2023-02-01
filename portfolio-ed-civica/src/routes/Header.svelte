@@ -41,7 +41,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica">
+		<a href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica" target="_blank">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>

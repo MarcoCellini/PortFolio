@@ -11,7 +11,11 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>
+			Per maggiori informazioni scrivere a <a href="mailto:marco.cellini@istitutoagnelli.it"
+				>marco.cellini@istitutoagnelli.it</a
+			>
+		</p>
 	</footer>
 </div>
 
