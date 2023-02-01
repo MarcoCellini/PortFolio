@@ -1,410 +1,141 @@
 <script>
-	import { confetti } from '@neoconfetti/svelte';
-	import { enhance } from '$app/forms';
-
-	import { reduced_motion } from './reduced-motion';
-
-	/** @type {import('./$types').PageData} */
-	export let data;
-
-	/** @type {import('./$types').ActionData} */
-	export let form;
-
-	/** Whether or not the user has won */
-	$: won = data.answers.at(-1) === 'xxxxx';
-
-	/** The index of the current guess */
-	$: i = won ? -1 : data.answers.length;
-
-	/** Whether the current guess can be submitted */
-	$: submittable = data.guesses[i]?.length === 5;
-
-	/**
-	 * A map of classnames for all letters that have been guessed,
-	 * used for styling the keyboard
-	 * @type {Record<string, 'exact' | 'close' | 'missing'>}
-	 */
-	let classnames;
-
-	/**
-	 * A map of descriptions for all letters that have been guessed,
-	 * used for adding text for assistive technology (e.g. screen readers)
-	 * @type {Record<string, string>}
-	 */
-	let description;
-
-	$: {
-		classnames = {};
-		description = {};
-
-		data.answers.forEach((answer, i) => {
-			const guess = data.guesses[i];
-
-			for (let i = 0; i < 5; i += 1) {
-				const letter = guess[i];
-
-				if (answer[i] === 'x') {
-					classnames[letter] = 'exact';
-					description[letter] = 'correct';
-				} else if (!classnames[letter]) {
-					classnames[letter] = answer[i] === 'c' ? 'close' : 'missing';
-					description[letter] = answer[i] === 'c' ? 'present' : 'absent';
-				}
-			}
-		});
-	}
-
-	/**
-	 * Modify the game state without making a trip to the server,
-	 * if client-side JavaScript is enabled
-	 * @param {MouseEvent} event
-	 */
-	function update(event) {
-		const guess = data.guesses[i];
-		const key = /** @type {HTMLButtonElement} */ (event.target).getAttribute('data-key');
-
-		if (key === 'backspace') {
-			data.guesses[i] = guess.slice(0, -1);
-			if (form?.badGuess) form.badGuess = false;
-		} else if (guess.length < 5) {
-			data.guesses[i] += key;
-		}
-	}
-
-	/**
-	 * Trigger form logic in response to a keydown event, so that
-	 * desktop users can use the keyboard to play the game
-	 * @param {KeyboardEvent} event
-	 */
-	function keydown(event) {
-		if (event.metaKey) return;
-
-		document
-			.querySelector(`[data-key="${event.key}" i]`)
-			?.dispatchEvent(new MouseEvent('click', { cancelable: true }));
-	}
+	import bio from '$lib/images/biologia.png';
 </script>
 
-<svelte:window on:keydown={keydown} />
-
 <svelte:head>
-	<title>Sverdle</title>
-	<meta name="description" content="A Wordle clone written in SvelteKit" />
+	<title>2020-2021</title>
+	<meta name="description" content="Attivit' svolte nell'anno scolastico 2020-2021" />
 </svelte:head>
 
-<h1 class="visually-hidden">Sverdle</h1>
+<body>
+	<h1><b>2020-2021</b></h1>
 
-<form
-	method="POST"
-	action="?/enter"
-	use:enhance={() => {
-		// prevent default callback from resetting the form
-		return ({ update }) => {
-			update({ reset: false });
-		};
-	}}
->
-	<a class="how-to-play" href="/sverdle/how-to-play">How to play</a>
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<img src={bio} alt="mappa-covid" class="foto-bio" />
+				</td>
 
-	<div class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
-		{#each Array(6) as _, row}
-			{@const current = row === i}
-			<h2 class="visually-hidden">Row {row + 1}</h2>
-			<div class="row" class:current>
-				{#each Array(5) as _, column}
-					{@const answer = data.answers[row]?.[column]}
-					{@const value = data.guesses[row]?.[column] ?? ''}
-					{@const selected = current && column === data.guesses[row].length}
-					{@const exact = answer === 'x'}
-					{@const close = answer === 'c'}
-					{@const missing = answer === '_'}
-					<div class="letter" class:exact class:close class:missing class:selected>
-						{value}
-						<span class="visually-hidden">
-							{#if exact}
-								(correct)
-							{:else if close}
-								(present)
-							{:else if missing}
-								(absent)
-							{:else}
-								empty
-							{/if}
-						</span>
-						<input name="guess" disabled={!current} type="hidden" {value} />
-					</div>
-				{/each}
-			</div>
-		{/each}
+				<td>&nbsp;</td>
+
+				<td>
+					<h2 class="title" id="biologia"><b>BIOLOGIA</b></h2>
+					<p class="descrizione">
+						Di Biologia durante l'anno scolastico 2020/2021 abbia approfondito un argomento in
+						particolare: il Covid-19. Il Covid-19 è un virus che ha colpito tutto il mondo già
+						dall'inizio del 2020 ed è tutt'ora presente (documento scritto il 3/1/21). Vi lascio il
+						link di un sito dove vi è la statistica mondiale dell'epidemia:<br />
+						<a
+							href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+							target="_blank">Coronavirus Covid-19</a
+						>
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<h2 class="title" id="inglese"><b>INGLESE</b></h2>
+					<p class="descrizione">
+						D'altro canto di Inglese ci siamo soffermati sulla formazione del Parlamento inglese e
+						sulla sua storia. Abbiamo anche studiato la differenza tra i vari poteri in capo alla
+						Monarchia e al Parlamento.
+						<br />Qui a destra e qui sotto vi lascio il video di presentazione di questi argomenti
+					</p>
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/RAMbIz3Y2JA"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div>
+		<div class="title" id="lettere">
+			<h2><b>LETTERE</b></h2>
+		</div>
+
+		<p class="descrizione">
+			A differenza di altre materie per Lettere durante l'anno scolastico abbiamo lavorato molto
+			sulla migrazione in generale; abbiamo approfondito l' argomento tramite l'incontro con il
+			dottor Pietro Bartolo, medico di Lampedusa, del quale abbiamo letto il libro "Le stelle di
+			Lampedusa". Inoltre durante questa attività abbiamo avuto la possibilità di vedere un
+			docu-film intitolato "Fuocoammare".
+			<br>Qui sotto vi lascio:
+		</p>
+
+		<ul class="descrizione" id="elenco">
+			<li>
+				Il riassunto del libro e se volete schiacciando sul pulsante sottostante potete comprarlo da Amazon.
+			</li>
+			<li>
+				Le slide sulla storia delle migrazioni. 
+			</li>
+			<li>
+				L'incontro con il dottor Pietro Bartolo.
+			</li>
+			<li>
+				Ed un sito dell'Unione Europea con le statistiche delle migrazioni nei vari paesi. 
+			</li>
+		</ul>
 	</div>
-
-	<div class="controls">
-		{#if won || data.answers.length >= 6}
-			{#if !won && data.answer}
-				<p>the answer was "{data.answer}"</p>
-			{/if}
-			<button data-key="enter" class="restart selected" formaction="?/restart">
-				{won ? 'you won :)' : `game over :(`} play again?
-			</button>
-		{:else}
-			<div class="keyboard">
-				<button data-key="enter" class:selected={submittable} disabled={!submittable}>enter</button>
-
-				<button
-					on:click|preventDefault={update}
-					data-key="backspace"
-					formaction="?/update"
-					name="key"
-					value="backspace"
-				>
-					back
-				</button>
-
-				{#each ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'] as row}
-					<div class="row">
-						{#each row as letter}
-							<button
-								on:click|preventDefault={update}
-								data-key={letter}
-								class={classnames[letter]}
-								disabled={data.guesses[i].length === 5}
-								formaction="?/update"
-								name="key"
-								value={letter}
-								aria-label="{letter} {description[letter] || ''}"
-							>
-								{letter}
-							</button>
-						{/each}
-					</div>
-				{/each}
-			</div>
-		{/if}
-	</div>
-</form>
-
-{#if won}
-	<div
-		style="position: absolute; left: 50%; top: 30%"
-		use:confetti={{
-			particleCount: $reduced_motion ? 0 : undefined,
-			force: 0.7,
-			stageWidth: window.innerWidth,
-			stageHeight: window.innerHeight,
-			colors: ['#ff3e00', '#40b3ff', '#676778']
-		}}
-	/>
-{/if}
+</body>
 
 <style>
-	form {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-		flex: 1;
+	h1 {
+		font-size: 5rem;
 	}
 
-	.how-to-play {
-		color: var(--color-text);
+	h2 {
+		font-size: 3rem;
 	}
 
-	.how-to-play::before {
-		content: 'i';
-		display: inline-block;
-		font-size: 0.8em;
-		font-weight: 900;
-		width: 1em;
-		height: 1em;
-		padding: 0.2em;
-		line-height: 1;
-		border: 1.5px solid var(--color-text);
-		border-radius: 50%;
+	.title {
+		text-align: left;
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+	.descrizione {
+		padding: 2.3%;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 1.3em;
+	}
+
+	.foto-bio {
+		width: 30rem;
+	}
+
+	#biologia {
+		color: rgb(10, 122, 0);
+	}
+
+	#inglese {
+		color: blue;
+	}
+
+	#lettere {
+		color: orange;
 		text-align: center;
-		margin: 0 0.5em 0 0;
-		position: relative;
-		top: -0.05em;
 	}
 
-	.grid {
-		--width: min(100vw, 40vh, 380px);
-		max-width: var(--width);
-		align-self: center;
-		justify-self: center;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-	}
-
-	.grid .row {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 0.2rem;
-		margin: 0 0 0.2rem 0;
-	}
-
-	@media (prefers-reduced-motion: no-preference) {
-		.grid.bad-guess .row.current {
-			animation: wiggle 0.5s;
-		}
-	}
-
-	.grid.playing .row.current {
-		filter: drop-shadow(3px 3px 10px var(--color-bg-0));
-	}
-
-	.letter {
-		aspect-ratio: 1;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		box-sizing: border-box;
-		text-transform: lowercase;
-		border: none;
-		font-size: calc(0.08 * var(--width));
-		border-radius: 2px;
-		background: white;
-		margin: 0;
-		color: rgba(0, 0, 0, 0.7);
-	}
-
-	.letter.missing {
-		background: rgba(255, 255, 255, 0.5);
-		color: rgba(0, 0, 0, 0.5);
-	}
-
-	.letter.exact {
-		background: var(--color-theme-2);
-		color: white;
-	}
-
-	.letter.close {
-		border: 2px solid var(--color-theme-2);
-	}
-
-	.selected {
-		outline: 2px solid var(--color-theme-1);
-	}
-
-	.controls {
-		text-align: center;
-		justify-content: center;
-		height: min(18vh, 10rem);
-	}
-
-	.keyboard {
-		--gap: 0.2rem;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		gap: var(--gap);
-		height: 100%;
-	}
-
-	.keyboard .row {
-		display: flex;
-		justify-content: center;
-		gap: 0.2rem;
-		flex: 1;
-	}
-
-	.keyboard button,
-	.keyboard button:disabled {
-		--size: min(8vw, 4vh, 40px);
-		background-color: white;
-		color: black;
-		width: var(--size);
-		border: none;
-		border-radius: 2px;
-		font-size: calc(var(--size) * 0.5);
-		margin: 0;
-	}
-
-	.keyboard button.exact {
-		background: var(--color-theme-2);
-		color: white;
-	}
-
-	.keyboard button.missing {
-		opacity: 0.5;
-	}
-
-	.keyboard button.close {
-		border: 2px solid var(--color-theme-2);
-	}
-
-	.keyboard button:focus {
-		background: var(--color-theme-1);
-		color: white;
-		outline: none;
-	}
-
-	.keyboard button[data-key='enter'],
-	.keyboard button[data-key='backspace'] {
-		position: absolute;
-		bottom: 0;
-		width: calc(1.5 * var(--size));
-		height: calc(1 / 3 * (100% - 2 * var(--gap)));
-		text-transform: uppercase;
-		font-size: calc(0.3 * var(--size));
-		padding-top: calc(0.15 * var(--size));
-	}
-
-	.keyboard button[data-key='enter'] {
-		right: calc(50% + 3.5 * var(--size) + 0.8rem);
-	}
-
-	.keyboard button[data-key='backspace'] {
-		left: calc(50% + 3.5 * var(--size) + 0.8rem);
-	}
-
-	.keyboard button[data-key='enter']:disabled {
-		opacity: 0.5;
-	}
-
-	.restart {
-		width: 100%;
-		padding: 1rem;
-		background: rgba(255, 255, 255, 0.5);
-		border-radius: 2px;
-		border: none;
-	}
-
-	.restart:focus,
-	.restart:hover {
-		background: var(--color-theme-1);
-		color: white;
-		outline: none;
-	}
-
-	@keyframes wiggle {
-		0% {
-			transform: translateX(0);
-		}
-		10% {
-			transform: translateX(-2px);
-		}
-		30% {
-			transform: translateX(4px);
-		}
-		50% {
-			transform: translateX(-6px);
-		}
-		70% {
-			transform: translateX(+4px);
-		}
-		90% {
-			transform: translateX(-2px);
-		}
-		100% {
-			transform: translateX(0);
-		}
+	#elenco {
+		margin-top: 0px;
+		padding: 2.5%;
 	}
 </style>

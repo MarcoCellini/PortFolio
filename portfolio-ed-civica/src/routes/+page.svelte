@@ -35,7 +35,7 @@
 						Internazionale Edoardo Agnelli che si trova in corso Unione Sovietica 312; per maggiori
 						informazioni visionare il sito della scuola: <a
 							href="https://agnelli.it/"
-							target="_blank">https://agnelli.it/</a
+							target="_blank">Agnelli</a
 						>.
 						<br />Ho creato questo portfolio per raggruppare e successivamente pubblicare a tutti le
 						attività che ho svolto di Educazione Civica durante i miei anni scolastici spero sia di
