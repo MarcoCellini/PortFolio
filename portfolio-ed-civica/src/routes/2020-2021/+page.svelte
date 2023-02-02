@@ -135,16 +135,15 @@
 
 	<br />
 
-	<div class="riassunto">
-		<center>
-			<iframe
-				src="https://docs.google.com/document/d/e/2PACX-1vSZym0B4an443owBw9z0jdBJjLgzZgHpLDfv-7fCyHekbE77Yxz1sRpRHGChucYRuVLMHr5CueIXiFg/pub?embedded=true"
-				width="700"
-				height="650"
-			/>
-		</center>
-	</div>
+	<center>
+		<iframe
+			src="https://docs.google.com/document/d/e/2PACX-1vSZym0B4an443owBw9z0jdBJjLgzZgHpLDfv-7fCyHekbE77Yxz1sRpRHGChucYRuVLMHr5CueIXiFg/pub?embedded=true"
+			width="700"
+			height="650"
+		/>
+	</center>
 
+	<br />
 	<br />
 
 	<table>

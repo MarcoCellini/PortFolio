@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/progetto-logo.svg';
+	import logo from '$lib/images/progetto-logo.png';
 	import github from '$lib/images/github.svg';
 </script>
 
