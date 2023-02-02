@@ -1,5 +1,6 @@
 <script>
 	import bio from '$lib/images/biologia.png';
+	import file from '$lib/images/file.png';
 </script>
 
 <svelte:head>
@@ -144,9 +145,62 @@
 		</center>
 	</div>
 
-	<br>
+	<br />
 
-	
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<iframe
+						src="https://docs.google.com/document/d/e/2PACX-1vS1zSHHo4ols3V201Gtoau6P-zC5OWBUs6-s9WGzovOG9sjlIZ1YBG38vjCOUlPLOjdZo4EOvqzva8U/pub?embedded=true"
+						width="600"
+						height="500"
+					/>
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+					<h2 class="title" id="diritto"><b>DIRITTO</b></h2>
+					<br />
+					<p class="descrizione">
+						Di Diritto abbiamo approfondito la storia di uno dei magistrati più famosi d'Italia
+						Paolo Borsellino che abbiamo conosciuto meglio tramite il libro "La casa di Paolo",
+						infine abbiamo esaminato tutto quello su cui lui ha lavoro negli anni dal Maxiprocesso a
+						come sono formate le associazioni mafiose.
+						<br />Qui a fianco vi lascio un piccolo riassunto del libro e se volete acquistare il
+						libro
+						<a
+							href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2Fpadrini-fondatori-Repubblica-secret-nascita%2Fdp%2F8899784469&sa=D&sntz=1&usg=AOvVaw3QUB05G89Vvuybcm-xi496"
+							target="_blank">questo</a
+						> è il link.
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<img src={file} alt="foto-file" />
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+					<h2 class="title" id="info"><b>INFORMATICA</b></h2>
+					<br />
+					<p class="descrizione">
+						Infine di Informatica ho creato questo Portfolio tramite Google Sites dove ho raccolto e
+						raccoglierò tutti gli argomenti trattati nel corso degli anni come se fosse un
+						grandissimo schedario online.
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 
 <style>
@@ -189,5 +243,13 @@
 	#elenco {
 		margin-top: 0px;
 		padding: 2.5%;
+	}
+
+	#diritto {
+		color: red;
+	}
+
+	#info {
+		color: aqua;
 	}
 </style>
