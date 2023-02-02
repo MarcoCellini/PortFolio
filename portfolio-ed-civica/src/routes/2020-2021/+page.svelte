@@ -77,24 +77,76 @@
 			dottor Pietro Bartolo, medico di Lampedusa, del quale abbiamo letto il libro "Le stelle di
 			Lampedusa". Inoltre durante questa attività abbiamo avuto la possibilità di vedere un
 			docu-film intitolato "Fuocoammare".
-			<br>Qui sotto vi lascio:
+			<br />Qui sotto vi lascio:
 		</p>
 
 		<ul class="descrizione" id="elenco">
 			<li>
-				Il riassunto del libro e se volete schiacciando sul pulsante sottostante potete comprarlo da Amazon.
+				Il riassunto del libro e se volete potete comprarlo da
+				<a
+					href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2Fstelle-Lampedusa-storia-bambini-cercano%2Fdp%2F8804719249%2Fref%3Dtmm_pap_swatch_0%3F_encoding%3DUTF8%26qid%3D1609673253%26sr%3D8-1&sa=D&sntz=1&usg=AOvVaw396DyfL3tREj1j9yxywtAr"
+					target="_blank">Amazon</a
+				>.
 			</li>
+			<li>Le slide sulla storia delle migrazioni.</li>
+			<li>L'incontro con il dottor Pietro Bartolo.</li>
 			<li>
-				Le slide sulla storia delle migrazioni. 
-			</li>
-			<li>
-				L'incontro con il dottor Pietro Bartolo.
-			</li>
-			<li>
-				Ed un sito dell'Unione Europea con le statistiche delle migrazioni nei vari paesi. 
+				<a
+					href="https://www.google.com/url?q=https%3A%2F%2Fec.europa.eu%2Finfo%2Fstrategy%2Fpriorities-2019-2024%2Fpromoting-our-european-way-life%2Fstatistics-migration-europe_it&sa=D&sntz=1&usg=AOvVaw3MkOFzTPdQVvkCN5fX55tf"
+					target="_blank"
+					>Ed un sito dell'Unione Europea con le statistiche delle migrazioni nei vari paesi.</a
+				>
 			</li>
 		</ul>
 	</div>
+
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<iframe
+						src="https://docs.google.com/presentation/d/e/2PACX-1vR6wT4De5dhKt-wZBrTybzlRqoe8SWaIZbatmRHM5kukxSvydHDxxWlfTQxCCc2arkK9g5ZwAnAJpEO/embed?start=false&loop=false&delayms=3000"
+						frameborder="0"
+						allowfullscreen="true"
+						mozallowfullscreen="true"
+						webkitallowfullscreen="true"
+						width="505"
+						height="360"
+					/>
+				</td>
+
+				<td>&nbsp;</td>
+
+				<td>
+					<iframe
+						width="505"
+						height="360"
+						src="https://www.youtube.com/embed/eHEZwiyect4"
+						title="L'Agnelli incontra il dottor Pietro Bartolo"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br />
+
+	<div class="riassunto">
+		<center>
+			<iframe
+				src="https://docs.google.com/document/d/e/2PACX-1vSZym0B4an443owBw9z0jdBJjLgzZgHpLDfv-7fCyHekbE77Yxz1sRpRHGChucYRuVLMHr5CueIXiFg/pub?embedded=true"
+				width="700"
+				height="650"
+			/>
+		</center>
+	</div>
+
+	<br>
+
+	
 </body>
 
 <style>
