@@ -9,18 +9,14 @@
 
 <body>
 	<h1><b>EDUCAZIONE CIVICA</b></h1>
+	
+	<br />
+
+	<h2 class="title"><b>CHE COS'E' L'EDUCAZIONE CIVICA</b></h2>
 
 	<table>
 		<tbody>
 			<tr>
-				<td colspan="3" class="title">
-					<h2><b>CHE COS'E' L'EDUCAZIONE CIVICA</b></h2>
-				</td>
-			</tr>
-
-			<tr>
-				<td>&nbsp;</td>
-
 				<td>
 					<p class="descrizione">
 						Da settembre 2020 l'Educazione Civica è una disciplina trasversale che interessa tutti i
@@ -36,7 +32,7 @@
 			</tr>
 
 			<tr>
-				<td colspan="3">
+				<td colspan="2">
 					<p class="descrizione">
 						Oltre a questi argomenti principali abbiamo trattato anche argomenti più vicini a noi
 						come l'epidemia di Cocid-19 nel 2020, gli sbarchi di migranti e le loro storie tramite
@@ -50,6 +46,12 @@
 </body>
 
 <style>
+	.title {
+		text-align: left;
+		font-family: 'Times New Roman', Times, serif;
+		color: green;
+	}
+
 	h1 {
 		font-size: 5rem;
 	}

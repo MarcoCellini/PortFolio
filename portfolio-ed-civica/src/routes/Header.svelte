@@ -1,13 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/progetto-logo.png';
+	import home from '$lib/images/home.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<div class="corner">
+	<div class="corner" id="home">
 		<a href="/">
-			<img src={logo} alt="Logo-portfolio" />
+			<img src={home} alt="Logo-home" />
 		</a>
 	</div>
 
@@ -134,5 +134,9 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	#home {
+		margin: 0.1%;
 	}
 </style>

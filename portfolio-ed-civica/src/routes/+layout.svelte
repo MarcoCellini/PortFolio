@@ -12,8 +12,9 @@
 
 	<footer>
 		<p>
-			Per maggiori informazioni scrivere a <a href="mailto:marco.cellini@istitutoagnelli.it"
-				>marco.cellini@istitutoagnelli.it</a
+			Il sito verrà aggiornato per aggiungere nuovi contenuti alla fine di ogni anno scolastico per
+			maggiori informazioni scrivere a questa email: <a
+				href="mailto:marco.cellini@istitutoagnelli.it">marco.cellini@istitutoagnelli.it</a
 			>
 		</p>
 	</footer>
