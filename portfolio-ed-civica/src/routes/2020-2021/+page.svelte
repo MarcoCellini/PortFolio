@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>2020-2021</title>
-	<meta name="description" content="Attivit' svolte nell'anno scolastico 2020-2021" />
+	<meta name="description" content="Attivita' svolte nell'anno scolastico 2020-2021" />
 </svelte:head>
 
 <body>
