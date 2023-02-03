@@ -240,7 +240,7 @@
 	}
 
 	#elenco {
-		margin-top: 0px;
+		margin-left: 2%;
 		padding: 2.5%;
 	}
 
