@@ -11,7 +11,7 @@
 	<h1><b>EDUCAZIONE CIVICA</b></h1>
 
 	<marquee class="name" align="middle" behavior="scroll" direction="left" scrolldelay="10">
-		<p>Created by Marco Cellini 4°Informatica</p>
+		<p>Created by Marco Cellini 5° Computer Science</p>
 	</marquee>
 
 	<table>

@@ -18,7 +18,7 @@
 		<br />L'articolo, dopo essere stato redatto, è stato corretto dalla docente di lettere e poi
 		successivamente e stato scritto nel blog tramite il linguaggio <i>MarkDown</i>.
 		<br />Più precisamente l'articolo che ho scritto io è
-		<a href="https://profmancusoa.github.io/blog/arte-del-pc/">questo</a>.
+		<a href="https://prof.mancusoa.it/blog/arte-del-pc-e-tecniche-di-modding/">questo</a>.
 	</p>
 </body>
 

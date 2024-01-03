@@ -1,20 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import home from '$lib/images/home.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<div class="corner" id="home">
-		<a href="/">
-			<img src={home} alt="Logo-home" />
-		</a>
-	</div>
+	<div class="corner" id="home" />
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
@@ -35,13 +27,10 @@
 				<a href="/2023-2024">2023-2024</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica" target="_blank">
+		<a href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica" target="_blank" rel=noreferrer>
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -51,6 +40,9 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		position: fixed;
+		width: 100%;
+		background-color:rgb(97, 236, 211, 0.96);
 	}
 
 	.corner {
@@ -78,16 +70,6 @@
 		--background: #0925B3;
 	}
 
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
 	ul {
 		position: relative;
 		padding: 0;
@@ -97,7 +79,6 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
 		background-size: contain;
 	}
 
@@ -138,5 +119,14 @@
 
 	#home {
 		margin: 0.1%;
+	}
+
+	li a {
+		color: #0925B3;
+		font-size: 1rem;
+	}
+
+	li[aria-current='page'] a {
+		color: var(--color-theme-1);
 	}
 </style>
