@@ -30,7 +30,11 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica" target="_blank" rel=noreferrer>
+		<a
+			href="https://github.com/MarcoCellini/PortFolio/tree/main/portfolio-ed-civica"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -42,7 +46,7 @@
 		justify-content: space-between;
 		position: fixed;
 		width: 100%;
-		background-color:rgb(97, 236, 211, 0.96);
+		background-color: rgb(97, 236, 211, 0.96);
 	}
 
 	.corner {
@@ -67,7 +71,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: #0925B3;
+		--background: #0925b3;
 	}
 
 	ul {
@@ -88,15 +92,13 @@
 	}
 
 	li[aria-current='page']::before {
-		--size: 10px;
+		--size: 10px; /* Set the size of the line */
 		content: '';
-		width: 0;
-		height: 0;
+		width: 50%; /* Set the width of the line */
+		height: 5px; /* Set the height of the line */
 		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		left: calc(30% - (var(--size) / 2)); /* Position the line horizontally in the center */
+		background-color: var(--color-theme-1); /* Set the color of the line */
 	}
 
 	nav a {
@@ -122,7 +124,7 @@
 	}
 
 	li a {
-		color: #0925B3;
+		color: #0925b3;
 		font-size: 1rem;
 	}
 
