@@ -29,7 +29,8 @@
 						link di un sito dove vi è la statistica mondiale dell'epidemia:<br />
 						<a
 							href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-							target="_blank">Coronavirus Covid-19</a
+							target="_blank"
+							rel="noreferrer">Coronavirus Covid-19</a
 						>
 					</p>
 				</td>
@@ -86,7 +87,8 @@
 				Il riassunto del libro e se volete potete comprarlo da
 				<a
 					href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2Fstelle-Lampedusa-storia-bambini-cercano%2Fdp%2F8804719249%2Fref%3Dtmm_pap_swatch_0%3F_encoding%3DUTF8%26qid%3D1609673253%26sr%3D8-1&sa=D&sntz=1&usg=AOvVaw396DyfL3tREj1j9yxywtAr"
-					target="_blank">Amazon</a
+					target="_blank"
+					rel="noreferrer">Amazon</a
 				>.
 			</li>
 			<li>Le slide sulla storia delle migrazioni.</li>
@@ -95,6 +97,7 @@
 				<a
 					href="https://www.google.com/url?q=https%3A%2F%2Fec.europa.eu%2Finfo%2Fstrategy%2Fpriorities-2019-2024%2Fpromoting-our-european-way-life%2Fstatistics-migration-europe_it&sa=D&sntz=1&usg=AOvVaw3MkOFzTPdQVvkCN5fX55tf"
 					target="_blank"
+					rel="noreferrer"
 					>Ed un sito dell'Unione Europea con le statistiche delle migrazioni nei vari paesi.</a
 				>
 			</li>
@@ -113,6 +116,7 @@
 						webkitallowfullscreen="true"
 						width="505"
 						height="360"
+						title="migration-presentation"
 					/>
 				</td>
 
@@ -140,6 +144,7 @@
 			src="https://docs.google.com/document/d/e/2PACX-1vSZym0B4an443owBw9z0jdBJjLgzZgHpLDfv-7fCyHekbE77Yxz1sRpRHGChucYRuVLMHr5CueIXiFg/pub?embedded=true"
 			width="700"
 			height="650"
+			title="le-stelle-di-lampedusa"
 		/>
 	</center>
 
@@ -154,6 +159,7 @@
 						src="https://docs.google.com/document/d/e/2PACX-1vS1zSHHo4ols3V201Gtoau6P-zC5OWBUs6-s9WGzovOG9sjlIZ1YBG38vjCOUlPLOjdZo4EOvqzva8U/pub?embedded=true"
 						width="600"
 						height="500"
+						title="la-casa-di-paolo"
 					/>
 				</td>
 
@@ -171,7 +177,8 @@
 						libro
 						<a
 							href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2Fpadrini-fondatori-Repubblica-secret-nascita%2Fdp%2F8899784469&sa=D&sntz=1&usg=AOvVaw3QUB05G89Vvuybcm-xi496"
-							target="_blank">questo</a
+							target="_blank"
+							rel="noreferrer">questo</a
 						> è il link.
 					</p>
 				</td>

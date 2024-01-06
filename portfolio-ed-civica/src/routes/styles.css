@@ -110,7 +110,6 @@ button:focus:not(:focus-visible) {
 }
 
 .descrizione {
-	padding: 2.3%;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 1.3em;
 	text-align: justify;
