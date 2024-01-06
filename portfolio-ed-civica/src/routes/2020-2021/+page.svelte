@@ -203,39 +203,20 @@
 </body>
 
 <style>
-	h1 {
-		font-size: 5rem;
-	}
-
-	h2 {
-		font-size: 3rem;
-	}
-
-	.title {
-		text-align: left;
-		font-family: 'Times New Roman', Times, serif;
-	}
-
-	.descrizione {
-		padding: 2.3%;
-		font-family: 'Times New Roman', Times, serif;
-		font-size: 1.3em;
-	}
-
 	.foto-bio {
 		width: 30rem;
 	}
 
 	#biologia {
-		color: rgb(10, 122, 0);
+		color: var(--color-biologia);
 	}
 
 	#inglese {
-		color: blue;
+		color: var(--color-inglese);
 	}
 
 	#lettere {
-		color: orange;
+		color: var(--color-lettere);
 		text-align: center;
 	}
 
@@ -245,10 +226,10 @@
 	}
 
 	#diritto {
-		color: red;
+		color: var(--color-diritto);
 	}
 
 	#info {
-		color: aqua;
+		color: var(--color-info);
 	}
 </style>

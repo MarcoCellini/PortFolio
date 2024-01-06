@@ -47,20 +47,29 @@
 			</tr>
 		</tbody>
 	</table>
+
+	<div class="video">
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/woLLeynqLxo?si=rlNE9abRt66zjVdK"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen
+		/>
+	</div>
 </body>
 
 <style>
-	h1 {
-		font-size: 5rem;
-	}
-
 	.name {
 		color: black;
 		font-size: 1.4rem;
 	}
 
 	h2 {
-		font-size: 3rem;
+		text-align: center;
+		color: var(--color-title);
 	}
 
 	.foto-scuola {
@@ -69,12 +78,11 @@
 
 	.descrizione {
 		padding: 1%;
-		font-family: 'Times New Roman', Times, serif;
 		font-size: 1.1em;
 	}
 
-	.title {
+	.video {
+		margin-top: 2%;
 		text-align: center;
-		font-family: 'Times New Roman', Times, serif;
 	}
 </style>

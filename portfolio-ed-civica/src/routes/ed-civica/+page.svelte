@@ -9,7 +9,7 @@
 
 <body>
 	<h1><b>EDUCAZIONE CIVICA</b></h1>
-	
+
 	<br />
 
 	<h2 class="title"><b>CHE COS'E' L'EDUCAZIONE CIVICA</b></h2>
@@ -47,27 +47,10 @@
 
 <style>
 	.title {
-		text-align: left;
-		font-family: 'Times New Roman', Times, serif;
-		color: green;
-	}
-
-	h1 {
-		font-size: 5rem;
-	}
-
-	h2 {
-		font-size: 3rem;
-	}
-
-	.title {
-		text-align: left;
-		font-family: 'Times New Roman', Times, serif;
+		color: var(--color-title);
 	}
 
 	.descrizione {
 		padding: 1%;
-		font-family: 'Times New Roman', Times, serif;
-		font-size: 1.3em;
 	}
 </style>

@@ -65,7 +65,8 @@
 		ho letto l'edizione Einaudi di cui vi lasci il link Amazon
 		<a
 			href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2FOliva-Denaro-Viola-Ardone%2Fdp%2F8806247972&sa=D&sntz=1&usg=AOvVaw1FHecEYTklTherLiZ1qERT"
-			target="_blank">qui
+			target="_blank"
+			>qui
 		</a>.
 	</p>
 
@@ -96,27 +97,8 @@
 </body>
 
 <style>
-	h1 {
-		font-size: 5rem;
-	}
-
-	h2 {
-		font-size: 3rem;
-	}
-
-	.title {
-		text-align: left;
-		font-family: 'Times New Roman', Times, serif;
-	}
-
-	.descrizione {
-		padding: 2.3%;
-		font-family: 'Times New Roman', Times, serif;
-		font-size: 1.3em;
-	}
-
 	#lettere {
-		color: orange;
+		color: var(--color-lettere);
 		text-align: center;
 	}
 
@@ -125,6 +107,6 @@
 	}
 
 	#info {
-		color: aqua;
+		color: var(--color-info);
 	}
 </style>
