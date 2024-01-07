@@ -46,7 +46,7 @@
 		justify-content: space-between;
 		position: fixed;
 		width: 100%;
-		background-color: rgb(97, 236, 211, 0.96);
+		background-color: rgb(126, 231, 216, 0.96);
 	}
 
 	.corner {

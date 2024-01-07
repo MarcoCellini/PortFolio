@@ -38,6 +38,7 @@
 						allowfullscreen="true"
 						mozallowfullscreen="true"
 						webkitallowfullscreen="true"
+						title="slides-emancipazione-femminile"
 					/>
 				</td>
 
@@ -50,6 +51,7 @@
 						allowfullscreen="true"
 						mozallowfullscreen="true"
 						webkitallowfullscreen="true"
+						title="slides-mafia"
 					/>
 				</td>
 			</tr>
@@ -58,15 +60,16 @@
 
 	<p class="descrizione">
 		Inoltre durante le vacanze invernali abbiamo avuto modo di leggere il libro, scritto da Viola
-		Ardone, "Olivia Denaro" che narra di una ragazza che dopo aver subito degli abusi sessuali si
-		rivolta contro la mentalità del tempo e rifiuta il matrimonio riparatore denunciando il suo
-		aguzzino.
+		Ardone, <i>"Olivia Denaro"</i> che narra di una ragazza che dopo aver subito degli abusi
+		sessuali si rivolta contro la mentalità del tempo e rifiuta il matrimonio riparatore denunciando
+		il suo aguzzino.
 		<br />Il libro, se pur un po' lungo, è molto bello e merita di essere letto. In particolare io
-		ho letto l'edizione Einaudi di cui vi lasci il link Amazon
+		ho letto l'edizione Einaudi di cui vi lasci il
 		<a
-			href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2FOliva-Denaro-Viola-Ardone%2Fdp%2F8806247972&sa=D&sntz=1&usg=AOvVaw1FHecEYTklTherLiZ1qERT"
+			href="https://www.einaudi.it/approfondimenti/viola-ardone-oliva-denaro/"
 			target="_blank"
-			>qui
+			rel="noreferrer"
+			>link qui
 		</a>.
 	</p>
 
@@ -81,13 +84,14 @@
 
 				<td>
 					<p class="descrizione">
-						Verso la fine dell'anno durante le ore di informatica abbiamo approfondi il tema della
-						sicurezza informatica e quindi abbiamo creato un sito/blog dove abbiamo riportato tutto
-						quello che abbiamo imparato.
+						Verso la fine dell'anno durante le ore di informatica abbiamo approfondito il tema della
+						sicurezza informatica creando un sito/blog dove abbiamo riportato tutto quello che
+						abbiamo imparato.
 						<br />Qui potete trovare il
 						<a
 							href="https://www.google.com/url?q=https%3A%2F%2Fed-civica.vercel.app%2F&sa=D&sntz=1&usg=AOvVaw1Zo_29-E3hAyxqTWO8QkqI"
-							target="_blank">link</a
+							target="_blank"
+							rel="noreferrer">link</a
 						> al sito.
 					</p>
 				</td>

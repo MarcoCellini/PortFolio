@@ -76,21 +76,19 @@
 		<p class="descrizione">
 			A differenza di altre materie per Lettere durante l'anno scolastico abbiamo lavorato molto
 			sulla migrazione in generale; abbiamo approfondito l' argomento tramite l'incontro con il
-			dottor Pietro Bartolo, medico di Lampedusa, del quale abbiamo letto il libro "Le stelle di
-			Lampedusa". Inoltre durante questa attività abbiamo avuto la possibilità di vedere un
-			docu-film intitolato "Fuocoammare".
+			dottor Pietro Bartolo, medico di Lampedusa, del quale abbiamo letto il libro <i
+				>"<a
+					href="https://www.mondadori.it/libri/le-stelle-di-lampedusa-pietro-bartolo/"
+					target="_blank"
+					rel="noreferrer">Le stelle di Lampedusa</a
+				>"</i
+			>. Inoltre durante questa attività abbiamo avuto la possibilità di vedere un docu-film
+			intitolato <i>"Fuocoammare"</i>.
 			<br />Qui sotto vi lascio:
 		</p>
 
 		<ul class="descrizione" id="elenco">
-			<li>
-				Il riassunto del libro e se volete potete comprarlo da
-				<a
-					href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2Fstelle-Lampedusa-storia-bambini-cercano%2Fdp%2F8804719249%2Fref%3Dtmm_pap_swatch_0%3F_encoding%3DUTF8%26qid%3D1609673253%26sr%3D8-1&sa=D&sntz=1&usg=AOvVaw396DyfL3tREj1j9yxywtAr"
-					target="_blank"
-					rel="noreferrer">Amazon</a
-				>.
-			</li>
+			<li>Il riassunto del libro</li>
 			<li>Le slide sulla storia delle migrazioni.</li>
 			<li>L'incontro con il dottor Pietro Bartolo.</li>
 			<li>
@@ -173,13 +171,12 @@
 						Paolo Borsellino che abbiamo conosciuto meglio tramite il libro "La casa di Paolo",
 						infine abbiamo esaminato tutto quello su cui lui ha lavoro negli anni dal Maxiprocesso a
 						come sono formate le associazioni mafiose.
-						<br />Qui a fianco vi lascio un piccolo riassunto del libro e se volete acquistare il
-						libro
+						<br />Qui a fianco vi lascio un piccolo riassunto del libro e se volete acquistarlo
 						<a
-							href="https://www.google.com/url?q=https%3A%2F%2Fwww.amazon.it%2Fpadrini-fondatori-Repubblica-secret-nascita%2Fdp%2F8899784469&sa=D&sntz=1&usg=AOvVaw3QUB05G89Vvuybcm-xi496"
+							href="https://www.rizzolilibri.it/libri/la-casa-di-paolo/"
 							target="_blank"
-							rel="noreferrer">questo</a
-						> è il link.
+							rel="noreferrer">questo è il link</a
+						>.
 					</p>
 				</td>
 			</tr>

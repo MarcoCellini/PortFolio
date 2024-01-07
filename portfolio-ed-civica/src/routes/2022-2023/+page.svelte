@@ -1,4 +1,5 @@
 <script>
+	import codF from '$lib/images/codF.png';
 </script>
 
 <svelte:head>
@@ -81,7 +82,54 @@
 			</p>
 		</div>
 
-		<p class="descrizione" />
+		<p class="descrizione">
+			Nel corso di quest'anno scolastico abbiamo anche discusso sul tema della pena di morte nel
+			corso della storia e nei tempi moderni avvalorando la discussione dalla lettura del romanzo di
+			Victor Hugo <i
+				>"<a
+					href="https://www.feltrinellieditore.it/opera/lultimo-giorno-di-un-condannato-1/"
+					target="_blank"
+					rel="noreferrer">L'ultimo giorno di un condannato</a
+				>".</i
+			><br />
+			Oltre a questi temi molto importanti buona parte delle lezioni è stata dedicata alla conoscenza
+			dei cosidetti <i>"Anni di Piombo"</i>, periodo a cavallo tra gli anni '60 e gli anni '80 in
+			cui l'Italia fu afflitta da un terrorismo di stampo politico. Abbiamo anche avuto l'onore di
+			incontrare Benedetta Tobagi, figlia di Walter Tobagi giornalista assassinato in un attentato
+			dalla Brigata XXVIII marzo, la quale è l'autrice del libro
+			<i
+				>"<a
+					href="https://www.einaudi.it/catalogo-libri/storia/storia-contemporanea/come-mi-batte-forte-il-tuo-cuore-benedetta-tobagi-9788806198886/"
+					target="_blank"
+					rel="noreferrer">Come mi batte forte il cuore</a
+				>".</i
+			>
+		</p>
+	</div>
+
+	<div class="info slide-text">
+		<div>
+			<h2 class="title" id="info"><b>INFORMATICA</b></h2>
+			<img src={codF} alt="codice-fiscale" />
+		</div>
+
+		<p class="descrizione">
+			Per quanto riguarda la materia informatica durante il corso dell'anno abbiamo continuato
+			l'apprendimento di conoscenza riguardanti la sicurrezza online e ci siamo occupati di capire
+			il funzionamento del codice fiscale e degli algoritmi che vi stanno dietro.<br />Creando due
+			applicazioni in grado di
+			<a
+				href="https://github.com/marcoce005/C-sharp/tree/main/CodiceFiscale"
+				target="_blank"
+				rel="noreferrer">generare il codice fiscale</a
+			>
+			date le informazioni dell'utente e
+			<a
+				href="https://github.com/marcoce005/C-sharp/tree/main/CodiceFiscaleReverse"
+				target="_blank"
+				rel="noreferrer">estrapolarle</a
+			> dato un codice fiscale.
+		</p>
 	</div>
 </body>
 
@@ -94,6 +142,14 @@
 	#lettere {
 		color: var(--color-lettere);
 		text-align: center;
+	}
+
+	#info {
+		color: var(--color-info);
+	}
+
+	.info p {
+		margin-top: 30%;
 	}
 
 	.slide-text,
