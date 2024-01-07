@@ -198,7 +198,8 @@
 					<p class="descrizione">
 						Infine di Informatica ho creato questo Portfolio tramite Google Sites dove ho raccolto e
 						raccoglierò tutti gli argomenti trattati nel corso degli anni come se fosse un
-						grandissimo schedario online.
+						grandissimo schedario online.<br />P.S. negli anni seguenti il sito è stato convertito
+						in SvelteKit e tutto il codice sorgente è disponibile nell'icona in alto a destra. 
 					</p>
 				</td>
 			</tr>
