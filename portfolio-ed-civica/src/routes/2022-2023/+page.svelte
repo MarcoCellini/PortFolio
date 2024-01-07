@@ -152,13 +152,6 @@
 		margin-top: 30%;
 	}
 
-	.slide-text,
-	.video-text {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 3%;
-	}
-
 	.video-text iframe {
 		margin-top: 6%;
 	}
