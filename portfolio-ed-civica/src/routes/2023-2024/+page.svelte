@@ -31,9 +31,54 @@
 		</div>
 	</div>
 
-    <div class="lettere">
-        <h2 class="title" id="lettere"><b>LETTERE</b></h2>
-    </div>
+	<div class="lettere">
+		<h2 class="title" id="lettere"><b>LETTERE</b></h2>
+
+		<p class="descrizione">
+			Buonaparte delle ore di educazione civica di quest'anno sono state dedicate alla
+			sensibilizzazione sulla violenza contro le donne, tema che oramai portiamo avanti da tre anni.
+			<br />
+			L'altro argomento trattano durante queste ore è la prigionia nei campi di concentramento/sterminio
+			in Germania negli anni '40, nei campi di lavoro Russi sotto la dittatura di Stalin e i laboratori
+			sperimentali dei Giapponesi verso la fine degli anni '40.
+		</p>
+	</div>
+
+	<div class="videos slide-text">
+		<div class="video1">
+			<iframe
+				width="490"
+				height="360"
+				src="https://www.youtube.com/embed/uXQVgp7g0Xk?si=MCzroNf5Te-VT6kX"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			/>
+		</div>
+		<div class="video2">
+			<iframe
+				width="490"
+				height="360"
+				src="https://www.youtube.com/embed/6yXNjIq50Dw?si=NTY5c5ViEP71Fee9"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			/>
+		</div>
+		<div class="video3">
+			<iframe
+				width="490"
+				height="360"
+				src="https://www.youtube.com/embed/SKOP830ETKk?si=A5N1MNZnV_qmTeg8"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			/>
+		</div>
+	</div>
 </body>
 
 <style>
@@ -42,8 +87,28 @@
 		margin-top: 0px;
 	}
 
-    #lettere {
-        text-align: center;
-        color: var(--color-lettere);
-    }
+	#lettere {
+		text-align: center;
+		color: var(--color-lettere);
+	}
+
+	.videos {
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "top1 top2" "down down";
+		column-gap: 1%;
+		row-gap: 1%;
+	}
+
+	.video1 {
+		grid-area: top1;
+	}
+
+	.video2 {
+		grid-area: top2;
+	}
+
+	.video3 {
+		grid-area: down;
+		text-align: center;
+	}
 </style>
