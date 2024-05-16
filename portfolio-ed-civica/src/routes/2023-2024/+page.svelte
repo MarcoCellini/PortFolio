@@ -79,6 +79,29 @@
 			/>
 		</div>
 	</div>
+
+	<br />
+
+	<p class="descrizione">
+		Durante il corso dell'anno abbiamo anche trattato il tema della situazione carceraria italiana. <br
+		/>
+		Abbiamo avuto l'onore di incontranre l'attuale direttice della "Casa Circondariale Lorusso e Cotugno"
+		di Torino la quale, insieme alla scrittice Serena Uccello, hanno redatto e pubblicato il libro "<i
+			><a
+				href="https://www.einaudi.it/catalogo-libri/problemi-contemporanei/senza-sbarre-cosima-buccoliero-9788806252793/"
+				target="_blank"
+				rel="noreferrer">Senza sbarre</a
+			></i
+		>".
+
+		<br /><br />
+		Nel corso dell'anno scolastico abbiamo avuto modo di affrontare temi anche difficili come la condizione
+		manicomiale precedente alla legge Basaglia, grazie anche alla lettura del libro "<i
+			><a href="https://www.rizzolilibri.it/libri/laltra-verita/" target="_blank" rel="noreferrer"
+				>L'altra verità</a
+			></i
+		>". Tratto dall'esperienza personale della poetessa Alda Merini.
+	</p>
 </body>
 
 <style>
@@ -94,7 +117,7 @@
 
 	.videos {
 		grid-template-rows: 1fr 1fr;
-		grid-template-areas: "top1 top2" "down down";
+		grid-template-areas: 'top1 top2' 'down down';
 		column-gap: 1%;
 		row-gap: 1%;
 	}
