@@ -85,14 +85,16 @@
 	<p class="descrizione">
 		Durante il corso dell'anno abbiamo anche trattato il tema della situazione carceraria italiana. <br
 		/>
-		Abbiamo avuto l'onore di incontranre l'attuale direttice della "Casa Circondariale Lorusso e Cotugno"
-		di Torino la quale, insieme alla scrittice Serena Uccello, hanno redatto e pubblicato il libro "<i
+		Abbiamo avuto l'onore di incontranre l'attuale direttice della "Casa di reclusione Milano Bollate"
+		Cosima Buccoliero, la quale, insieme alla scrittice Serena Uccello, hanno redatto e pubblicato il
+		libro "<i
 			><a
 				href="https://www.einaudi.it/catalogo-libri/problemi-contemporanei/senza-sbarre-cosima-buccoliero-9788806252793/"
 				target="_blank"
 				rel="noreferrer">Senza sbarre</a
 			></i
-		>".
+		>". Il libro descrive un modello migliore del carcere, dove la pena detentiva deve mirare al
+		reinserimento del detenuto nella società non ridursi alla sola punizione.
 
 		<br /><br />
 		Nel corso dell'anno scolastico abbiamo avuto modo di affrontare temi anche difficili come la condizione
